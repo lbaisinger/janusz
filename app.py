@@ -20,7 +20,7 @@ def dashboard():
     temperature = float(temperature_kelvin) - 273.15
     temperature_feels_like = float(temperature_feels_like_kelvin) - 273.15
     # todo add icon
-    return render_template('dashboard.html',
+    return render_template('calendar.html',
                            temperature="{:.2f}".format(temperature),
                            temperature_feels_like="{:.2f}".format(temperature_feels_like))
 
