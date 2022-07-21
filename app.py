@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from weather_module import *
+import os
 
 app = Flask(__name__)
 
@@ -24,5 +25,7 @@ def bootstrap():
                            temperature_feels_like="{:.2f}".format(temperature_feels_like))
 
 
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(host=os.getenv('IP', '0.0.0.0'),
+            port=int(os.getenv('PORT', 4444)))
+

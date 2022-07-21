@@ -15,6 +15,7 @@
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
+          height: "auto",
           themeSystem: 'bootstrap5',
           googleCalendarApiKey: 'AIzaSyDqi0dwOovK5kb3IXb6LZFxCRGvwkG8Gcs',
           events: {
@@ -63,7 +64,7 @@
       <!-- weather data -->
       <!-- https://www.youtube.com/watch?v=-CT28e2Dl24 -->
       <div class="col-4 text-end">
-        <h1 class="display-1">{{temperature}}° C</h1>
+        <h1 class="display-2">{{temperature}}° C</h1>
       </div>
     </div>
 
