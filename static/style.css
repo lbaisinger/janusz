@@ -1,0 +1,11 @@
+html {
+  padding: 1rem;
+}
+
+body {
+  background-image: url("img/img1.jpg")
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;
+}

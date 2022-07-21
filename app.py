@@ -24,6 +24,5 @@ def bootstrap():
                            temperature_feels_like="{:.2f}".format(temperature_feels_like))
 
 
-
 if __name__ == '__main__':
     app.run()
