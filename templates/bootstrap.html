@@ -27,7 +27,7 @@
   </head>
   <body onload="startTime()">
     <div class="row">
-      <div class="col-8">
+      <div class="col-4">
         <h1><div id="txt"></div>
             <script>
             function startTime() {
@@ -49,9 +49,10 @@
         </h1>
       </div>
       <div class="col-4">
-        <h1>Temperature: {{temperature}}° C</h1>
-        <br>
-        <h2>Odczuwalna: {{ temperature_feels_like }}° C</h2>
+        <a href='http://en.sat24.com/en' target='sat24'><image src='https://api.sat24.com/animated/EU/visual/1/Central%20European%20Standard%20Time/944690' width=400 height=291></a>
+      </div>
+      <div class="col-4">
+        <h1>{{temperature}}° C</h1>
       </div>
     </div>
     <div id='calendar'></div>
