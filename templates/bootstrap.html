@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.css">
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.js"></script>
 
+    <!-- RENDER CALENDAR -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -25,10 +26,15 @@
 
     </script>
   </head>
+
   <body onload="startTime()">
+
+  <!-- TOP ROW -->
     <div class="row">
-      <div class="col-4">
-        <h1><div id="txt"></div>
+
+      <!-- Clock -->
+      <div class="col-8">
+        <h1 class="display-1"><div id="txt"></div>
             <script>
             function startTime() {
               const today = new Date();
@@ -48,14 +54,20 @@
             </script>
         </h1>
       </div>
-      <div class="col-4 text-end">
-        <a href='http://en.sat24.com/en' target='sat24'><image src='https://api.sat24.com/animated/EU/visual/1/Central%20European%20Standard%20Time/944690' width=400 height=291></a>
+
+      <!-- sat24
+      <div class="col-4 text-center">
+        <a href='http://en.sat24.com/en' target='sat24'><image src='https://api.sat24.com/animated/EU/visual/1/Central%20European%20Standard%20Time/944690' width=400 height=291></image></a>
       </div>
+      -->
+      <!-- weather data -->
+      <!-- https://www.youtube.com/watch?v=-CT28e2Dl24 -->
       <div class="col-4 text-end">
-        <h1>{{temperature}}° C</h1>
+        <h1 class="display-1">{{temperature}}° C</h1>
       </div>
     </div>
 
+    <!-- calendar -->
     <div class="row">
      <div id='calendar'></div>
     </div>
