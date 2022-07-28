@@ -10,6 +10,11 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/base')
+def base():
+    return render_template('base.html')
+
+
 @app.route('/bootstrap', methods=['POST'])
 def bootstrap():
     zip_code = request.form['zipCode']

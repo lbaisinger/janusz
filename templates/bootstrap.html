@@ -15,11 +15,21 @@
         var calendarEl = document.getElementById('calendar');
 
         var calendar = new FullCalendar.Calendar(calendarEl, {
-          height: "100%",
+          initialView: 'dayGridMonth',
+          locale: 'pl',
+          aspectRatio: 1,
+          firstDay: 1,
+          weekNumbers: true,
+          expandRows: true,
           themeSystem: 'bootstrap5',
           googleCalendarApiKey: 'AIzaSyDqi0dwOovK5kb3IXb6LZFxCRGvwkG8Gcs',
           events: {
             googleCalendarId: '12r4n4ebq0gacaurtn6opk0tt4@group.calendar.google.com'
+          },
+          eventTimeFormat: {
+            hour: '2-digit',
+            minute: '2-digit',
+            meridiem: false
           }
         });
         calendar.render();
