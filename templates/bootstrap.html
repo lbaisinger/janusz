@@ -17,15 +17,16 @@
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           locale: 'pl',
-          aspectRatio: 1,
           firstDay: 1,
+
+          Height: 1000,
           weekNumbers: true,
-          expandRows: true,
           themeSystem: 'bootstrap5',
           googleCalendarApiKey: 'AIzaSyDqi0dwOovK5kb3IXb6LZFxCRGvwkG8Gcs',
           events: {
             googleCalendarId: '12r4n4ebq0gacaurtn6opk0tt4@group.calendar.google.com'
           },
+          eventDisplay: 'block',
           eventTimeFormat: {
             hour: '2-digit',
             minute: '2-digit',
@@ -74,7 +75,7 @@
       <!-- weather data -->
       <!-- https://www.youtube.com/watch?v=-CT28e2Dl24 -->
       <div class="col-4 text-end">
-        <h1 class="display-2">{{temperature}}° C</h1>
+        <h1 class="display-2">{{temperature}} °C</h1>
       </div>
     </div>
 

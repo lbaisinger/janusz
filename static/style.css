@@ -18,14 +18,16 @@ a {
     color: #FFF
 }
 
-.fc-body .fc-row { max-height: 45px; }
-
 .fc-col-header {
   background-color: #FFF;
-  opacity: 0.3;
+  opacity: 0.4;
   color: #000;
 }
 
 .fc .fc-daygrid-day-number {
   color: #FFF !important;
+}
+
+.fc-daygrid-day {
+  height: 100px;
 }
