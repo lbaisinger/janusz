@@ -31,3 +31,11 @@ a {
 .fc-daygrid-day {
   height: 200px;
 }
+
+.fc-event-title {
+padding: 0 1px;
+white-space: normal;
+}
+.fc-event-time {
+  width: 80px !important;
+}
