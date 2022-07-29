@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-image: url("img/img1.jpg")
+  background-image: url("img/img1.jpg");
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,5 +30,5 @@ a {
 }
 
 .fc-daygrid-day {
-  height: 100px;
+  height: 200px;
 }
