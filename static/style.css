@@ -37,5 +37,5 @@ padding: 0 1px;
 white-space: normal;
 }
 .fc-event-time {
-  width: 80px !important;
+  min-width: 50px !important;
 }
