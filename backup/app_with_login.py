@@ -5,9 +5,9 @@ import os
 app = Flask(__name__)
 
 
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 
 @app.route('/base')
@@ -15,10 +15,10 @@ def base():
     return render_template('base.html')
 
 
-@app.route('/')
+@app.route('/bootstrap', methods=['POST'])
 def bootstrap():
-    zip_code = '01219'  # request.form['zipCode']
-    country_code = 'DE'  # request.form['countryCode']
+    zip_code = request.form['zipCode']
+    country_code = request.form['countryCode']
     api_key = get_api_key()
     weather_data = get_weather_data(zip_code, country_code, api_key)
     temperature_kelvin = "{0:.2f}".format(weather_data['main']['temp'])
