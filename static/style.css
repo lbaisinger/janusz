@@ -1,0 +1,41 @@
+html {
+  padding: 1rem;
+}
+
+body {
+  background-image: url("img/img3.jpg")
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FFF;
+}
+
+p {
+  color: #FFF
+}
+
+a {
+    color: #FFF
+}
+
+.fc-col-header {
+  background-color: #FFF;
+  opacity: 0.4;
+  color: #000;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #FFF !important;
+}
+
+.fc-daygrid-day {
+  height: 200px;
+}
+
+.fc-event-title {
+padding: 0 1px;
+white-space: normal;
+}
+.fc-event-time {
+  min-width: 45px !important;
+}
