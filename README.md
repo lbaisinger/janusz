@@ -4,6 +4,7 @@
 - dokladniejszy weather module/po lokalizacji wifi/osobny czujnik: geolokacja mozliwa
 - automatyczne odswieżanie
 - zmiana tapety, dodawanie nowych obrazków
+- host na zdalnym serwerze
 ### Settings:
 - to turn display on/off:
   - vcgencmd display_power 0
