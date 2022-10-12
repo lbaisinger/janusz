@@ -7,35 +7,53 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #FFF;
+  color: #FCF7F8;
 }
 
 p {
-  color: #FFF
+  color: #FCF7F8
 }
 
 a {
-    color: #FFF
+    color: #FCF7F8
 }
 
 .fc-col-header {
-  background-color: #FFF;
-  opacity: 0.4;
-  color: #000;
+  background-color: #242320;
+  opacity: 1;
+  color: #FCF7F8;
 }
 
 .fc .fc-daygrid-day-number {
-  color: #FFF !important;
+  color: #FCF7F8 !important;
 }
 
 .fc-daygrid-day {
   height: 200px;
 }
 
+.fc-daygrid-event {
+  font-color: #FCF7F8;
+}
+
+.fc-h-event {
+  border: 3px #FCF7F8 !important;
+  background-color: #242320 !important;
+  opacity: 0.8;
+}
+
 .fc-event-title {
 padding: 0 1px;
 white-space: normal;
 }
-.fc-event-time {
-  min-width: 45px !important;
+
+.fc-scrollgrid {
+  border: #FCF7F8 !important;
 }
+
+.btn {
+  background-color: #242320 !important;
+  border: 3px #FCF7F8 !important;
+}
+
+

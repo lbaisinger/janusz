@@ -5,7 +5,7 @@
 - automatyczne odswieżanie
 - zmiana tapety, dodawanie nowych obrazków, zmiana koloru czcionki/eventow
 - host na zdalnym serwerze
-- 
+- automatyczne odswiezanie strony (kalendarz/temperatura)
 ### Settings:
 - to turn display on/off:
   - vcgencmd display_power 0
@@ -19,3 +19,6 @@
   - chromium-browser
   - Flask
   - Git
+  - start.sh (+ make executable by sudo chmod x+a)
+  - allow anybody via ssh X11
+  - 
