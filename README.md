@@ -21,4 +21,6 @@
   - Git
   - start.sh (+ make executable by sudo chmod x+a)
   - allow anybody via ssh X11
-  - 
+### Startup
+1. cd ./janusz --> export FLASK_APP = app.py --> flask run --hostk=0.0.0.0
+2. xinit ./janusz/start.sh
