@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-image: url("img/img3.jpg")
+  background-image: url("img/img4.jpg");
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,5 +56,10 @@ white-space: normal;
   background-color: #242320 !important;
   border: 3px #FCF7F8 !important;
 }
+
+.fc-event-time {
+  min-width: 40px !important;
+}
+
 
 

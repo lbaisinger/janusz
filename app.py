@@ -1,13 +1,7 @@
-from flask import Flask, render_template, request
-from weather_module import *
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
-
-
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
 
 
 @app.route('/base')
@@ -17,17 +11,7 @@ def base():
 
 @app.route('/')
 def bootstrap():
-    zip_code = '01219'  # request.form['zipCode']
-    country_code = 'DE'  # request.form['countryCode']
-    api_key = get_api_key()
-    weather_data = get_weather_data(zip_code, country_code, api_key)
-    temperature_kelvin = "{0:.2f}".format(weather_data['main']['temp'])
-    temperature_feels_like_kelvin = '{0:.2f}'.format(weather_data['main']['feels_like'])
-    temperature = float(temperature_kelvin) - 273.15
-    temperature_feels_like = float(temperature_feels_like_kelvin) - 273.15
-    return render_template('bootstrap.html',
-                           temperature="{:.2f}".format(temperature),
-                           temperature_feels_like="{:.2f}".format(temperature_feels_like))
+    return render_template('bootstrap.html')
 
 
 if __name__ == "__main__":

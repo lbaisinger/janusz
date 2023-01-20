@@ -33,6 +33,10 @@
           }
         });
         calendar.render();
+        setInterval(function() {
+            calendar.refetchEvents()
+          }, 60000
+        )
       });
 
     </script>
@@ -66,21 +70,42 @@
         </h1>
       </div>
 
-      <!-- sat24
-      <div class="col-4 text-center">
-      </div>
-      -->
-      <!-- weather data -->
-      <!-- https://www.youtube.com/watch?v=-CT28e2Dl24 -->
+      <!-- Weather -->
       <div class="col-4 text-end">
-        <h1 class="display-2">{{temperature}} °C</h1>
+        <h1 class="display-2">
+          <script>
+            function pogodynka() {
+              fetch('https://api.openweathermap.org/data/2.5/weather?q=Dresden,DE&appid=31ecd91c11672b7887a89ddf33c30390')
+              .then(function(resp) { return resp.json() }) // Convert data to json
+              .then(function(data) {
+                drawWeather(data);
+              });
+            }
+
+            function drawWeather( d ) {
+              var celcius1 = parseFloat(d.main.temp)-273.15;
+              var celcius = parseFloat(celcius1).toFixed(2);
+              document.getElementById('temperer').innerHTML = celcius + '&deg;C';
+            }
+
+            pogodynka()
+            setInterval(function() {
+                pogodynka()
+              }, 60000
+            )
+          </script>
+          <div id="temperer"></div>
+        </h1>
+      </div>
+    </div>
+  <!-- 2ND ROW = satelite -->
+    <div class="row align-items-center">
+      <div class="col-8">
+        <a href='http://en.sat24.com/en' target='sat24'><image src='https://api.sat24.com/animated/EU/visual/1/Central%20European%20Standard%20Time/944690' width=400 height=291></image></a>
       </div>
     </div>
 
-    <div class="row align-items-center">
-        <a href='http://en.sat24.com/en' target='sat24'><image src='https://api.sat24.com/animated/EU/visual/1/Central%20European%20Standard%20Time/944690' width=400 height=291></image></a>
-    </div>
-    <!-- calendar -->
+  <!-- 3RD ROW = Calendar -->
     <div class="row align-items-end">
      <div id='calendar'></div>
     </div>
