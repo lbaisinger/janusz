@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  background-image: url("img/img4.jpg");
-  background-size: "100%";
+  background-image: url("img/img6.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -20,6 +20,32 @@ a {
     color: #FCF7F8
 }
 
+.dashboard {
+min-height: 10vh
+}
+
+.kalendarz {
+min-height: 90vh;
+}
+
+.fc {
+min-height: 90vh;
+}
+
+.fc-header-toolbar {
+min-height: 10vh;
+}
+
+.fc-view-harness {
+min-height: 80vh;
+}
+
+.fc-scrollgrid {
+  min-height: 100%;
+  border: none !important;
+
+}
+
 .fc-col-header {
   background-color: #242320;
   opacity: 1;
@@ -31,12 +57,12 @@ a {
 }
 
 .fc-daygrid-day {
-  height:100vh;
+
   opacity: 1;
 }
 
 .fc-daygrid-event {
-  font-color: #FCF7F8;
+  font-color: #FFFCF7F8;
 }
 
 .fc-h-event {
@@ -50,9 +76,6 @@ a {
   white-space: normal;
 }
 
-.fc-scrollgrid {
-  border: #FCF7F8 !important;
-}
 
 .btn {
   background-color: #242320 !important;
