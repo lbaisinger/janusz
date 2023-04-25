@@ -29,15 +29,15 @@ min-height: 90vh;
 }
 
 .fc {
-min-height: 90vh;
+  min-height: 100%;
 }
 
 .fc-header-toolbar {
-min-height: 10vh;
+  min-height: 10%;
 }
 
 .fc-view-harness {
-min-height: 80vh;
+  min-height: 90%;
 }
 
 .fc-scrollgrid {
