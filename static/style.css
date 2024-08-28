@@ -57,7 +57,7 @@ min-height: 90%;
 }
 
 .fc-daygrid-day {
-
+  min-height: 150px;
   opacity: 1;
 }
 
