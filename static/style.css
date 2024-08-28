@@ -57,13 +57,10 @@ min-height: 90%;
 }
 
 .fc-daygrid-day {
+  height: 150px !important;
   opacity: 1;
 }
 
-.fc-day {
-  min-height: 150px !important;
-  opacity: 1;
-}
 
 .fc-daygrid-event {
   font-color: #FFFCF7F8;
