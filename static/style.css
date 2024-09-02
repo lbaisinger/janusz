@@ -1,5 +1,5 @@
 html {
-  padding: 1rem;
+  padding: 25px;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #FCF7F8;
+  font-weight: bold;
 }
 
 p {
@@ -47,6 +48,7 @@ min-height: 90%;
 }
 
 .fc-col-header {
+  font-size: 18px;
   background-color: #242320;
   opacity: 1;
   color: #FCF7F8;
