@@ -73,6 +73,7 @@ min-height: 90%;
 }
 
 .fc-event-title {
+  font-size: 12px;
   padding: 0 1px;
   white-space: normal;
 }
