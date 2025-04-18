@@ -85,7 +85,7 @@
 
             function drawWeather( d ) {
               var celcius1 = parseFloat(d.main.temp)-273.15;
-              var celcius = parseFloat(celcius1).toFixed(2);
+              var celcius = parseFloat(celcius1).toFixed(0);
               document.getElementById('temperer').innerHTML = celcius + '&deg;C';
             }
 
