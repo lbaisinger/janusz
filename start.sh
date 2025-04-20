@@ -1,7 +1,6 @@
 #!/bin/sh
-unclutter &
+export DISPLAY=:0
 xset -dpms # disable DPMS (Energy Star) features.
 xset s off # disable screen saver
 xset s noblank # don’t blank the video device
-matchbox-window-manager &
-chromium-browser --incognito --start-fullscreen http://192.168.2.105:5000/
+chromium-browser --incognito --start-fullscreen https://bajsi.pythonanywhere.com/
